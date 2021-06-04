@@ -80,7 +80,7 @@ function formSumbitted(event) {
 
 	if (inputFieldValue.length > 0 && wordInput != undefined) {
 	counter += 1;
-	$container.innerHTML += `
+	$container.innerHTML = `
 	<li data-target="${counter}">
 		${inputFieldValue}
 		<button data-target="${counter}">Delete Word</button>
@@ -100,7 +100,7 @@ function formSumbitted(event) {
 			adv = inputFieldValue;
 			$adv1.innerHTML += inputFieldValue;
 		} else if (partOfSpeech === "adverb" && adv != "") {
-			alert("You hava already entered an adverb.")
+			alert("You have already entered an adverb.")
 		}
 		} else {
 		alert("Improper word type. try again!");
