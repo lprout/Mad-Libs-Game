@@ -98,7 +98,7 @@ function formSumbitted(event) {
 				alert("You already entered enough adjectives!");
 			} else if (partOfSpeech === "adverb" && adv === "") {
 				adv = inputFieldValue;
-				$adv1.innerHTML += inputFieldValue + " " + definition;
+				$adv1.innerHTML += inputFieldValue;
 			} else if (partOfSpeech === "adverb" && adv != "") {
 				alert("You already entered an adverb.")
 			}
@@ -110,10 +110,10 @@ function formSumbitted(event) {
 		if (nouns.length === 3 && adjs.length === 2 && adv != "") {
 
 		for (var i = 0; i < 3; i++) {
-			$noun[i].innerHTML += `${nouns[i]}, ${definition}`;
+			$noun[i].innerHTML += `${nouns[i]}`;
 		} 
 		for (var k = 0; k < 2; k++) {
-				$adj[k].innerHTML += `${adjs[k]}, ${definition}`;
+				$adj[k].innerHTML += `${adjs[k]}`;
 			} 
 
 		displayStory();
