@@ -63,7 +63,6 @@ function formSumbitted(event) {
 			} else {
 				wordInput = data[0].word;
 				partOfSpeech = data[0].meanings[0].partOfSpeech;
-
 			}
 		});
 	*/
@@ -84,7 +83,7 @@ function formSumbitted(event) {
 			}
 		});
 
-	// conditions to execute if input is of the correct type
+	// conditions to validate user input
 	if (inputFieldValue.length > 0 && wordInput != undefined) {
 
 		if (partOfSpeech === "noun" || partOfSpeech === "adjective" || partOfSpeech === "adverb") {

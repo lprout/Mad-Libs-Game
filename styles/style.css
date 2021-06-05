@@ -2,7 +2,7 @@ body {
 	font-family: 'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 	font-size: 1.5em;
 	padding: 20px;
-	margin: 25px 25px 0px 25px;
+	margin: 5px 25px 0px 25px;
 	background-image: url(../images/letters.jpg); 
 	background-size: cover;
 }
@@ -66,6 +66,10 @@ button {
 	text-shadow: .25px .25px 1px whitesmoke;
  }
 
+ .reset-game {
+	margin-right: 10px; 
+ }
+
 button:hover {
 	background-color: rgb(26, 26, 70);
 	box-shadow: 3px 3px 8px black;
@@ -102,4 +106,22 @@ footer {
 	padding-top: 10px;
 }
 
+@media screen and (max-width: 768px) {
+	body {
+		padding: 10px;
+		margin: 10px
+	}
 
+	h3, p {
+		padding: 15px;
+	}
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	footer {
+		padding: 15px;
+	}
+}
