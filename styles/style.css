@@ -3,22 +3,23 @@ body {
 	font-size: 1.5em;
 	padding: 20px;
 	margin: 5px 25px 0px 25px;
-	background-image: url(../images/letters.jpg); 
+	background-image: url(../images/letters.jpg);
 	background-size: cover;
 }
 
 main {
-	background-image: linear-gradient( rgba(209, 223, 248, 0.75), rgba(255, 255, 255, 0.6));
+	background-image: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.6));
 }
 h2 {
-	margin: 20px;
-	padding: 30px 0px 15px 0px; 
+	padding: 30px 0px 15px 0px;
 	text-align: center;
 	font-size: 2.25em;
 	border-bottom: black solid 4px;
+	background-color: #ffffff;
+
 }
 
-h3, form, #words {
+h3, form, .words {
 	display: flex;
 	margin: 25px;
 	padding: 25px 50px 25px 50px;
@@ -37,16 +38,16 @@ p {
 	border-bottom: black solid 4px;
 }
 
-#words {
+.words {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	text-align: left;
 }
- 
+
 input {
-	font-size: .75em;
+	font-size: .8em;
 	padding: 10px;
 }
 
@@ -57,30 +58,44 @@ form {
 }
 
 button {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Quicksand', 'Courier New', Courier, monospace;
 	padding: 10px;
-	margin-left: 10px;
-	font-size: .75em;
+	font-size: .8em;
 	background-color: rgb(9, 9, 54);
 	color: white;
 	text-shadow: .25px .25px 1px whitesmoke;
+	border: white solid 3px;
  }
 
+.submit-word {
+	margin: 15px 10px 15px 10px;
+}
+
  .reset-game {
-	margin-right: 10px; 
+	margin-right: 0px;
+	background-color: #db0c4a;
+	width: 140px;
  }
 
 button:hover {
-	background-color: rgb(26, 26, 70);
-	box-shadow: 3px 3px 8px black;
+	background-color: rgb(44, 44, 105);
+	box-shadow: 2px 2px 7px black;
 	cursor: pointer;
 }
 
 button:active {
 	color: black;
-	background-color: lightblue;
-	box-shadow: 3px 3px 8px black;
+	background-color: rgb(142, 183, 236);
+	text-shadow: 1px 1px 5px black;
 	cursor: pointer;
+}
+
+.reset-game:hover {
+	background-color: #ff6d8a;
+}
+
+.reset-game:active {
+	background-color: #ecb5c0;
 }
 
 .story-container h3 {
@@ -97,7 +112,7 @@ button:active {
 footer {
 	text-align: center;
 	padding: 25px 0px 25px 0px;
-	background-image: linear-gradient(rgba(255, 195, 205, 0.8), rgba(255, 255, 255, 0.5));
+	background-image: linear-gradient(#ecb5c0, rgba(255, 255, 255, 0.5));
 }
 
 #logo {
@@ -129,7 +144,9 @@ footer {
 
 	form {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 
 	footer {

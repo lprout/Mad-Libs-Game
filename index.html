@@ -6,15 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="./styles/style.css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
 	<title>Mad Libs Game</title>
 </head>
 <body>
 	<main>
 		<h2>Mad Libs Game</h2>
-		<h3>Welcome to the game! Start by typing in the words asked for in the fields below in any order. Enter your word choices in the input field until all the words are filled in. Then your story will be revealed!</h3>
-		<p>Note: the game only fetches the <em>first</em> definition of the word entered, so you might get an error message if you enter a type that has more than one use (e.g. <strong>guard</strong> is a verb and a noun). </p>
+		<h3>
+			Welcome to the game! Start by typing in the words asked for in the
+			fields below in any order. Enter your word choices in the input
+			field until all the words are filled in. Then your story will be
+			revealed!
+		</h3>
+		<p>
+			Note: the game only fetches the <em>first</em> definition of the
+			word entered, so you might get an error message if you enter a type
+			that has more than one use (e.g. <strong>guard</strong> is a verb
+			and a noun).
+		</p>
 		<form action="#" class="madlibs-form">
 			<input type="text" name="word" placeholder="Example: balloon"/>
 			<button type="submit" class="submit-word" disabled>Enter</button>
@@ -23,27 +39,30 @@
 		<ul class="temp-container"></ul>
 
 		<div class="word-info">
-			<div id="words">
+			<div class="words">
 				<div class="noun-1">Noun 1: </div>
 				<div class="noun-2">Noun 2: </div>
 				<div class="noun-3">Noun 3: </div>
 				<div class="adj-1">Adjective 1: </div>
 				<div class="adj-2">Adjective 2: </div>
-				<div class="adv">Adverb:  </div>	
+				<div class="adv">Adverb:  </div>
 			</div>
 		</div>
 		<div class="story-container"></div>
 	</main>
-	<footer> 
+	<footer>
 		<div id="cred">
 			<img id="logo" src="./images/MWLogo.svg" alt="Merriam-Webster Dictionary logo"/>
-			
+
 			<div>
-				Application built using <a href="https://dictionaryapi.com/">Merriam-Webster Dictionary API</a>
+				Application built using the
+				<a href="https://dictionaryapi.com/">
+					Merriam-Webster Dictionary API
+				</a>
 			</div>
 		</div>
 		<div id="copyright">
-			Copyright 2021 &copy; Laura Prout  
+			Copyright 2021 &copy; Laura Prout
 		</div>
 	</footer>
 	<script src="./js/script.js"></script>
