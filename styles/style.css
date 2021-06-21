@@ -1,6 +1,6 @@
 body {
 	font-family: 'Lora', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	padding: 20px;
 	margin: 5px 25px 0px 25px;
 	background-image: url(../images/letters.jpg);
@@ -8,14 +8,14 @@ body {
 }
 
 main {
-	background-image: linear-gradient( rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.6));
+	background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.25));
 }
 h2 {
+	font-family: 'Permanent Marker';
 	padding: 30px 0px 15px 0px;
 	text-align: center;
-	font-size: 2.25em;
+	font-size: 2.5em;
 	border-bottom: black solid 4px;
-	background-color: #ffffff;
 
 }
 
@@ -44,6 +44,10 @@ p {
 	justify-content: center;
 	align-items: flex-start;
 	text-align: left;
+}
+
+.word {
+	padding: 5px;
 }
 
 input {
